@@ -3,7 +3,6 @@ package main
 import (
 	"database/sql"
 	"os"
-	"p_dm_aa01_hafsa/internal/cloudflare"
 	"p_dm_aa01_hafsa/internal/config"
 	db "p_dm_aa01_hafsa/internal/db/sqlc"
 	"p_dm_aa01_hafsa/internal/modules/menu"
@@ -45,8 +44,4 @@ func main() {
 	root.Init(app)
 	menu.Init(app)
 	log.Fatal().Err(app.Start()).Msg("failed to start server")
-}
-
-func CacheRuleSetup() {
-	cloudflare.Cache()
 }
