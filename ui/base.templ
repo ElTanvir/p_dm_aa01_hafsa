@@ -20,20 +20,10 @@ templ BaseComponent(headContent string, title string, showHeader bool) {
 			/>
 			<!-- Critical CSS loaded synchronously -->
 			@templ.Raw(criticalCSS)
-			// <link href="/static/gen.css" rel="stylesheet"/>
-			<link href="/static/styles.css" rel="stylesheet"/>
-			// <link rel="stylesheet" href="/static/styles.css" media="print" onload="this.media='all'"/>
-			// <noscript><link rel="stylesheet" href="/static/styles.css"/></noscript>
+			<link rel="stylesheet" href="/static/styles.css" media="print" onload="this.media='all'"/>
 			<link rel="icon" href="/static/favicon.ico"/>
-			<!--Fonts-->
-			<!-- HTMX Core - loaded immediately -->
 			<script defer src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.6/dist/htmx.min.js"></script>
 			<script defer src="https://cdn.jsdelivr.net/npm/htmx-ext-preload@2.1.0"></script>
-			<script>
-				document.addEventListener('htmx:load', function() {
-					htmx.config.globalViewTransitions = true
-				});
-			</script>
 			<!-- Alpine.js ecosystem - deferred -->
 			<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
 			<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
