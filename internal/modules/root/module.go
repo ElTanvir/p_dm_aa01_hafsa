@@ -1,9 +1,9 @@
 package root
 
 import (
-	homepage "portfolioed/internal/modules/root/page"
-	"portfolioed/internal/server"
-	"portfolioed/util"
+	homepage "p_dm_aa01_hafsa/internal/modules/root/page"
+	"p_dm_aa01_hafsa/internal/server"
+	"p_dm_aa01_hafsa/util"
 
 	"github.com/gofiber/fiber/v2"
 )

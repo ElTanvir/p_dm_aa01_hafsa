@@ -2,9 +2,9 @@ package usecase
 
 import (
 	"context"
-	db "portfolioed/internal/db/sqlc"
-	"portfolioed/internal/modules/theme/domain"
-	"portfolioed/internal/modules/theme/repository"
+	db "p_dm_aa01_hafsa/internal/db/sqlc"
+	"p_dm_aa01_hafsa/internal/modules/theme/domain"
+	"p_dm_aa01_hafsa/internal/modules/theme/repository"
 )
 
 type ThemeUseCase interface {

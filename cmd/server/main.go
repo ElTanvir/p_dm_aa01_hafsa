@@ -3,14 +3,14 @@ package main
 import (
 	"database/sql"
 	"os"
-	"portfolioed/internal/cloudflare"
-	"portfolioed/internal/config"
-	db "portfolioed/internal/db/sqlc"
-	"portfolioed/internal/modules/menu"
-	"portfolioed/internal/modules/root"
-	"portfolioed/internal/modules/theme"
-	"portfolioed/internal/server"
-	"portfolioed/util"
+	"p_dm_aa01_hafsa/internal/cloudflare"
+	"p_dm_aa01_hafsa/internal/config"
+	db "p_dm_aa01_hafsa/internal/db/sqlc"
+	"p_dm_aa01_hafsa/internal/modules/menu"
+	"p_dm_aa01_hafsa/internal/modules/root"
+	"p_dm_aa01_hafsa/internal/modules/theme"
+	"p_dm_aa01_hafsa/internal/server"
+	"p_dm_aa01_hafsa/util"
 
 	_ "github.com/mattn/go-sqlite3"
 	"github.com/rs/zerolog"
@@ -47,6 +47,6 @@ func main() {
 	log.Fatal().Err(app.Start()).Msg("failed to start server")
 }
 
-func CacheRuleSetup(){
+func CacheRuleSetup() {
 	cloudflare.Cache()
 }

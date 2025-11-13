@@ -1,9 +1,9 @@
 package menu
 
 import (
-	menupage "portfolioed/internal/modules/menu/page"
-	"portfolioed/internal/server"
-	"portfolioed/util"
+	menupage "p_dm_aa01_hafsa/internal/modules/menu/page"
+	"p_dm_aa01_hafsa/internal/server"
+	"p_dm_aa01_hafsa/util"
 
 	"github.com/gofiber/fiber/v2"
 )

@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"portfolioed/internal/store"
-	"portfolioed/util"
+	"p_dm_aa01_hafsa/internal/store"
+	"p_dm_aa01_hafsa/util"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/rs/zerolog/log"

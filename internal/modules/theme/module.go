@@ -2,11 +2,10 @@ package theme
 
 import (
 	"context"
-	"portfolioed/internal/modules/theme/repository"
-	"portfolioed/internal/modules/theme/usecase"
-	"portfolioed/internal/server"
+	"p_dm_aa01_hafsa/internal/modules/theme/repository"
+	"p_dm_aa01_hafsa/internal/modules/theme/usecase"
+	"p_dm_aa01_hafsa/internal/server"
 )
-
 
 func Init(server *server.Server) {
 	useCase := getUseCase(server)
@@ -23,4 +22,3 @@ func GetHandler(s *server.Server) usecase.ThemeUseCase {
 	useCase := getUseCase(s)
 	return useCase
 }
-

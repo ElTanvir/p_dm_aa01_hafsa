@@ -3,8 +3,8 @@ package repository
 import (
 	"context"
 	"fmt"
-	db "portfolioed/internal/db/sqlc"
-	"portfolioed/internal/modules/theme/domain"
+	db "p_dm_aa01_hafsa/internal/db/sqlc"
+	"p_dm_aa01_hafsa/internal/modules/theme/domain"
 	"sync"
 	"time"
 )

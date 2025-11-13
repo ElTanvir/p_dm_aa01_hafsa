@@ -2,9 +2,9 @@ package handler
 
 import (
 	"context"
-	db "portfolioed/internal/db/sqlc"
-	"portfolioed/internal/modules/theme/domain"
-	"portfolioed/internal/modules/theme/usecase"
+	db "p_dm_aa01_hafsa/internal/db/sqlc"
+	"p_dm_aa01_hafsa/internal/modules/theme/domain"
+	"p_dm_aa01_hafsa/internal/modules/theme/usecase"
 )
 
 type ThemeHandler interface {

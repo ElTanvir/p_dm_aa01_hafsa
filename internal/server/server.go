@@ -2,10 +2,10 @@ package server
 
 import (
 	"fmt"
-	"portfolioed/internal/config"
-	db "portfolioed/internal/db/sqlc"
-	"portfolioed/internal/middleware"
-	"portfolioed/token"
+	"p_dm_aa01_hafsa/internal/config"
+	db "p_dm_aa01_hafsa/internal/db/sqlc"
+	"p_dm_aa01_hafsa/internal/middleware"
+	"p_dm_aa01_hafsa/token"
 	"time"
 
 	"github.com/gofiber/fiber/v2"
