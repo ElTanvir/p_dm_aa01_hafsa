@@ -5,12 +5,10 @@ package themeswitcher
 
 //lint:file-ignore SA4006 This context is only used if a nested component is present.
 
-import (
-	"p_dm_aa01_hafsa/ui/primitives/dropdown"
+import "github.com/a-h/templ"
+import templruntime "github.com/a-h/templ/runtime"
 
-	"github.com/a-h/templ"
-	templruntime "github.com/a-h/templ/runtime"
-)
+import "p_dm_aa01_hafsa/ui/primitives/dropdown"
 
 type ThemeSwitcherProps struct {
 	Class string

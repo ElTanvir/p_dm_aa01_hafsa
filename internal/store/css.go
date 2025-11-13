@@ -28,44 +28,44 @@ var CriticalCSS = `
         --font-body: "Inter", sans-serif;
         --font-title: "Nunito", sans-serif;
 
-        /* Light Theme Colors (Mapped to "Playful Doodle" Palette) */
-        --color-surface: #ffffff; /* brand-bg */
-        --color-surface-alt: #fbf5ff; /* brand-bg-start (light purple) */
-        --color-on-surface: #555555; /* brand-text-secondary */
-        --color-on-surface-strong: #212121; /* brand-text-primary */
+        /* Light Theme Colors (Warm Honey Palette) */
+        --color-surface: #FFF0BF; /* Given Background */
+        --color-surface-alt: #F7E9B9; /* Slightly darker, muted surface */
+        --color-on-surface: #5C280B; /* Readable dark brown text */
+        --color-on-surface-strong: #3E1B07; /* Stronger dark brown text */
 
-        --color-primary: #7f00ff; /* brand-primary (Purple) */
-        --color-on-primary: #ffffff; /* Text on primary */
+        --color-primary: #84390F; /* Given Brand/Primary */
+        --color-on-primary: #FFFFFF; /* Text on primary */
 
-        --color-secondary: #ccff00; /* brand-accent-lime */
-        --color-on-secondary: #212121; /* Text on lime */
+        --color-secondary: #EAAA00; /* Rich Gold accent */
+        --color-on-secondary: #3E1B07; /* Dark text on gold */
 
-        --color-outline: #d4d4d4; /* Default light border (e.g., header) */
-        --color-outline-strong: #212121; /* Strong border (e.g., service cards) */
+        --color-outline: #DDCFA9; /* Muted beige border */
+        --color-outline-strong: #84390F; /* Primary color border */
 
-        --color-info: #0284c7; /* Unused in this design, kept as-is */
-        --color-on-info: #000000;
+        --color-info: #0F5E84; /* Deep, muted blue */
+        --color-on-info: #FFFFFF;
 
-        --color-success: #059669; /* Unused in this design, kept as-is */
-        --color-on-success: #000000;
+        --color-success: #386641; /* Earthy / Forest Green */
+        --color-on-success: #FFFFFF;
 
-        --color-warning: #ff4500; /* brand-accent-orange */
-        --color-on-warning: #ffffff; /* Text on orange */
+        --color-warning: #D95F00; /* Burnt Orange */
+        --color-on-warning: #FFFFFF;
 
-        --color-danger: #fff5f5; /* Mapped to brand-bg-end (light red) */
-        --color-on-danger: #ef4444; /* Original danger red, for text use */
+        --color-danger: #C62828; /* Deep, earthy red */
+        --color-on-danger: #FFFFFF;
 
         /* Border Radius */
         --radius-none: 0;
         --radius-radius: 1rem; /* Mapped to borderRadius-brand */
 
-        /* Shadows */
-        --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-        --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.05); /* Mapped to boxShadow-brand */
-        --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-          0 4px 6px -4px rgb(0 0 0 / 0.1);
-        --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-          0 8px 10px -6px rgb(0 0 0 / 0.1);
+        /* Shadows (Tinted with Primary Color) */
+        --shadow-sm: 0 1px 2px 0 rgba(132, 57, 15, 0.05);
+        --shadow-md: 0 4px 10px rgba(132, 57, 15, 0.07); /* Mapped to boxShadow-brand */
+        --shadow-lg: 0 10px 15px -3px rgba(132, 57, 15, 0.1),
+          0 4px 6px -4px rgba(132, 57, 15, 0.07);
+        --shadow-xl: 0 20px 25px -5px rgba(132, 57, 15, 0.1),
+          0 8px 10px -6px rgba(132, 57, 15, 0.1);
       }
     </style>
   `

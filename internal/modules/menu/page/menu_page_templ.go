@@ -5,12 +5,12 @@ package menupage
 
 //lint:file-ignore SA4006 This context is only used if a nested component is present.
 
+import "github.com/a-h/templ"
+import templruntime "github.com/a-h/templ/runtime"
+
 import (
 	"p_dm_aa01_hafsa/internal/modules/menu/components"
 	"p_dm_aa01_hafsa/ui"
-
-	"github.com/a-h/templ"
-	templruntime "github.com/a-h/templ/runtime"
 )
 
 func MenuPage() templ.Component {

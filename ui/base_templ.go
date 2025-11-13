@@ -5,12 +5,10 @@ package ui
 
 //lint:file-ignore SA4006 This context is only used if a nested component is present.
 
-import (
-	"p_dm_aa01_hafsa/internal/store"
+import "github.com/a-h/templ"
+import templruntime "github.com/a-h/templ/runtime"
 
-	"github.com/a-h/templ"
-	templruntime "github.com/a-h/templ/runtime"
-)
+import "p_dm_aa01_hafsa/internal/store"
 
 func BaseComponent(headContent string, title string, showHeader bool) templ.Component {
 	return templruntime.GeneratedTemplate(func(templ_7745c5c3_Input templruntime.GeneratedComponentInput) (templ_7745c5c3_Err error) {
@@ -34,7 +32,7 @@ func BaseComponent(headContent string, title string, showHeader bool) templ.Comp
 		}
 		ctx = templ.ClearChildren(ctx)
 
-		var criticalCSS = store.GetCssVariable()
+		var criticalCSS = store.CriticalCSS
 		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<!doctype html><html lang=\"en\" class=\"dark\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"view-transition\" content=\"same-origin\"><link rel=\"preconnect\" href=\"https://cdn.jsdelivr.net\" crossorigin><link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin><link href=\"https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&family=Inter:wght@400;500;700&display=swap\" rel=\"stylesheet\"><!-- Critical CSS loaded synchronously -->")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
