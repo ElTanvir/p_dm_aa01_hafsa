@@ -7,7 +7,6 @@ import (
 	db "p_dm_aa01_hafsa/internal/db/sqlc"
 	"p_dm_aa01_hafsa/internal/modules/menu"
 	"p_dm_aa01_hafsa/internal/modules/root"
-	"p_dm_aa01_hafsa/internal/modules/theme"
 	"p_dm_aa01_hafsa/internal/server"
 	"p_dm_aa01_hafsa/util"
 
@@ -40,7 +39,6 @@ func main() {
 	if err != nil {
 		log.Fatal().Err(err).Msg("failed to create server")
 	}
-	theme.Init(app)
 	root.Init(app)
 	menu.Init(app)
 	log.Fatal().Err(app.Start()).Msg("failed to start server")
